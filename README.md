@@ -8,7 +8,6 @@ A Custom CSS for [RemNote](https://www.remnote.io/) to change how flashcard gene
 
 - Color code rem types (plain, multi-line, list, set) and card types (concept, descriptor, question [and slot]).
 - Visually indicate backward practice direction.
-- Spot bugs! :muscle: (The top rem `Rem Types` should not be a concept.)
 
 **Note:** This is only a proof of concept. See [Current Problems](#current-problems).
 
@@ -17,8 +16,11 @@ A Custom CSS for [RemNote](https://www.remnote.io/) to change how flashcard gene
 1. Open the `Custom CSS` page in RemNote.
 2. Create a new blank template block.
 3. Paste the layout:
-   1. If you want future updates, just reference the URL [TODO URL](#).
-   2. If you want to tweak some stuff copy the style directly: [TODO Link](#).
+   1. If you want future updates and are ok with the defaults, just paste this:
+      ```
+      @import URL('https://cdn.jsdelivr.net/gh/hannesfrank/remnote-css-rem-types@master/card-types.css');
+      ```
+   2. If you want to tweak some stuff copy the style directly [from here](https://github.com/hannesfrank/remnote-css-rem-types/blob/master/card-types.css).
 
 ## Contributing
 
