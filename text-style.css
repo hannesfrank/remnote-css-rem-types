@@ -1,0 +1,9 @@
+/* As we have visual indication through icons, we don't need text styling anymore. */
+.concept_rem_type,
+.question_rem_type {
+  font-weight: initial;
+}
+
+.descriptor_rem_type {
+  font-style: initial;
+}

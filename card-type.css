@@ -1,0 +1,38 @@
+/* ------------------- Card type ------------------- */
+/* Default Text Type */
+/*
+.rem-container--text-card-type .rem-text .concept_rem_type::before,
+.rem-container--text-card-type .rem-text .descriptor_rem_type::before,
+.rem-container--text-card-type .rem-text .slot_rem_type::before,
+.rem-container--text-card-type .rem-text .question_rem_type::before {
+  content: "T";
+  color: green;
+}
+*/
+
+.rem-container--multiline-card-type .rem-text .concept_rem_type::before,
+.rem-container--multiline-card-type .rem-text .descriptor_rem_type::before,
+/*.rem-container--multiline-card-type .rem-text .slot_rem_type::before,*/
+.rem-container--multiline-card-type .rem-text .question_rem_type::before {
+  content: " ☰ ";
+  color: plum;
+}
+.rem-container--list-card-type .rem-text .concept_rem_type::before,
+.rem-container--list-card-type .rem-text .descriptor_rem_type::before,
+/*.rem-container--multiline-card-type .rem-text .slot_rem_type::before, */
+.rem-container--list-card-type .rem-text .question_rem_type::before {
+  content: "［...］";
+  content: "[ … ] ";
+  content: "[⋯] ";
+  color: mediumseagreen;
+}
+
+.rem-container--set-card-type .rem-text .concept_rem_type::before,
+.rem-container--set-card-type .rem-text .descriptor_rem_type::before,
+/*.rem-container--multiline-card-type .rem-text .slot_rem_type::before, */
+.rem-container--set-card-type .rem-text .question_rem_type::before {
+  content: "［...］";
+  content: "[ … ] ";
+  content: "{⋯} ";
+  color: coral;
+}

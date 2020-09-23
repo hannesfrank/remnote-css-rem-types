@@ -1,0 +1,44 @@
+/* Disable current indicators */
+.strikediag,
+.separatorCharacterAnnotation,
+.MultiLineCardIndicator {
+  font-size: 0;
+}
+
+.rem-container--practice-enabled.rem-container--backwards-practice-enabled
+  .concept_rem_type::after,
+.rem-container--practice-enabled.rem-container--backwards-practice-enabled
+  .descriptor_rem_type::after {
+  content: "⇔";
+  font-size: 15px;
+  color: goldenrod;
+  margin-left: 3px;
+}
+
+.rem-container--practice-enabled.rem-container--backwards-practice-disabled
+  .concept_rem_type::after,
+.rem-container--practice-enabled.rem-container--backwards-practice-disabled
+  .descriptor_rem_type::after,
+.rem-container--practice-enabled.rem-container--backwards-practice-disabled
+  .question_rem_type::after {
+  content: "⇒";
+  font-size: 15px;
+  color: green;
+  margin-left: 3px;
+}
+
+.rem-container--practice-disabled .strikediag::after {
+  content: "⇏";
+  font-size: 15px;
+  color: orangered;
+  margin-left: 3px;
+}
+
+/* warn on back questions */
+.rem-container--practice-enabled.rem-container--backwards-practice-enabled
+  .question_rem_type::after {
+  content: "!⇔!";
+  font-size: 15px;
+  color: red;
+  margin-left: 3px;
+}
