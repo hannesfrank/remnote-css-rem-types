@@ -1,25 +1,28 @@
 /* Disable current indicators */
-.strikediag,
-.separatorCharacterAnnotation,
-.MultiLineCardIndicator {
+.rem-container:not(.rem-container--focused) .strikediag,
+.rem-container:not(.rem-container--focused) .separatorCharacterAnnotation,
+.rem-container:not(.rem-container--focused) .MultiLineCardIndicator {
   font-size: 0;
 }
 
-.rem-container--practice-enabled.rem-container--backwards-practice-enabled
+:not(.rem-container--focused).rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled
   .concept_rem_type::after,
-.rem-container--practice-enabled.rem-container--backwards-practice-enabled
-  .descriptor_rem_type::after {
+:not(.rem-container--focused).rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled
+  .descriptor_rem_type::after
+/* No question here, see below */
+/*:not(.rem-container--focused).rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled
+  .question_rem_type::after*/ {
   content: "⇔";
   font-size: 15px;
   color: goldenrod;
   margin-left: 3px;
 }
 
-.rem-container--practice-enabled.rem-container--backwards-practice-disabled
+:not(.rem-container--focused).rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled
   .concept_rem_type::after,
-.rem-container--practice-enabled.rem-container--backwards-practice-disabled
+:not(.rem-container--focused).rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled
   .descriptor_rem_type::after,
-.rem-container--practice-enabled.rem-container--backwards-practice-disabled
+:not(.rem-container--focused).rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled
   .question_rem_type::after {
   content: "⇒";
   font-size: 15px;
@@ -27,7 +30,21 @@
   margin-left: 3px;
 }
 
-.rem-container--practice-disabled .strikediag::after {
+:not(.rem-container--focused).rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled
+  .concept_rem_type::after,
+:not(.rem-container--focused).rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled
+  .descriptor_rem_type::after
+/* No question here, see below */
+/* :not(.rem-container--focused).rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled
+  .question_rem_type::after*/ {
+  content: "⇐";
+  font-size: 15px;
+  color: blue;
+  margin-left: 3px;
+}
+
+:not(.rem-container--focused).rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled
+  .strikediag::after {
   content: "⇏";
   font-size: 15px;
   color: orangered;
@@ -35,10 +52,15 @@
 }
 
 /* warn on back questions */
-.rem-container--practice-enabled.rem-container--backwards-practice-enabled
+:not(.rem-container--focused).rem-container--backwards-practice-enabled
   .question_rem_type::after {
-  content: "!⇔!";
+  content: "!⇐!";
   font-size: 15px;
   color: red;
   margin-left: 3px;
+}
+
+:not(.rem-container--focused).rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled
+  .question_rem_type::after {
+  content: "!⇔!";
 }

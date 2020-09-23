@@ -21,8 +21,8 @@
 .rem-container--list-card-type .rem-text .descriptor_rem_type::before,
 /*.rem-container--multiline-card-type .rem-text .slot_rem_type::before, */
 .rem-container--list-card-type .rem-text .question_rem_type::before {
-  content: "［...］";
-  content: "[ … ] ";
+  /* content: "［...］"; */
+  /* content: "[ … ] "; */
   content: "[⋯] ";
   color: mediumseagreen;
 }
@@ -31,8 +31,8 @@
 .rem-container--set-card-type .rem-text .descriptor_rem_type::before,
 /*.rem-container--multiline-card-type .rem-text .slot_rem_type::before, */
 .rem-container--set-card-type .rem-text .question_rem_type::before {
-  content: "［...］";
-  content: "[ … ] ";
+  /* content: "［...］"; */
+  /* content: "[ … ] "; */
   content: "{⋯} ";
   color: coral;
 }

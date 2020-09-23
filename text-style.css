@@ -7,3 +7,9 @@
 .descriptor_rem_type {
   font-style: initial;
 }
+
+/* User defined bold formatting has to be reenabled again. */
+.concept_rem_type.bold,
+.question_rem_type.bold {
+  font-weight: bold;
+}
