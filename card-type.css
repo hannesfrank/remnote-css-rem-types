@@ -14,6 +14,7 @@
 .rem-container--multiline-card-type .rem-text .descriptor_rem_type::before,
 /*.rem-container--multiline-card-type .rem-text .slot_rem_type::before,*/
 .rem-container--multiline-card-type .rem-text .question_rem_type::before {
+  /* content: url("assets/toolbar/multiline.svg"); */
   content: " ☰ ";
   color: plum;
 }
@@ -23,6 +24,7 @@
 .rem-container--list-card-type .rem-text .question_rem_type::before {
   /* content: "［...］"; */
   /* content: "[ … ] "; */
+  /* contest: url("assets/toolbar/list.svg"); */
   content: "[⋯] ";
   color: mediumseagreen;
 }
@@ -33,6 +35,7 @@
 .rem-container--set-card-type .rem-text .question_rem_type::before {
   /* content: "［...］"; */
   /* content: "[ … ] "; */
+  /* contest: url("assets/toolbar/set.svg"); */
   content: "{⋯} ";
   color: coral;
 }

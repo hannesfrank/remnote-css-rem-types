@@ -24,7 +24,7 @@ Allow custom text styling by resetting format for concept (bold) and descriptor 
    1. If you want future updates and are ok with the defaults, import the features you want:
       ```css
       @import URL("https://hannesfrank.github.io/remnote-css-rem-types/practice-direction.css");
-      @import URL("https://hannesfrank.github.io/remnote-css-rem-types/rem-direction.css");
+      @import URL("https://hannesfrank.github.io/remnote-css-rem-types/rem-type.css");
       @import URL("https://hannesfrank.github.io/remnote-css-rem-types/card-type.css");
       @import URL("https://hannesfrank.github.io/remnote-css-rem-types/text-style.css");
       ```
@@ -52,7 +52,7 @@ Setup a workspace in Chrome DevTools. See e.g. [StackOverflow: How to save CSS c
 
 ```
 @import URL("http://127.0.0.1:5500/practice-direction.css");
-@import URL("http://127.0.0.1:5500/rem-direction.css");
+@import URL("http://127.0.0.1:5500/rem-type.css");
 @import URL("http://127.0.0.1:5500/card-type.css");
 @import URL("http://127.0.0.1:5500/text-style.css");
 ```
@@ -75,6 +75,7 @@ Setup a workspace in Chrome DevTools. See e.g. [StackOverflow: How to save CSS c
   ```
   - Option 2: [masks](https://developer.mozilla.org/de/docs/Web/CSS/mask) (supports coloring, care prefixing)
   ```
+    content: "";
     background: green;
     display: inline-block;
     width: 12px;
