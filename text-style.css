@@ -13,3 +13,7 @@
 .question_rem_type.bold {
   font-weight: bold;
 }
+.descriptor_rem_type.italic,
+.question_rem_type.bold {
+  font-style: italic;
+}

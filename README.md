@@ -18,6 +18,15 @@ Allow custom text styling by resetting format for concept (bold) and descriptor 
 
 ## Installation
 
+The style consists of multiple modules of which you can chose the parts you want to enable:
+
+- `practice-direction.css`: arrows (⇔, ⇏) instead of `::`
+- `rem-type*.css`: Icons for Concept, Descriptor, Question and Slot. There are 2 variants of which you can chose one:
+  - `rem-type.css`: Using RemNotes SVG icons.
+  - `rem-type-simple.css`: Use `<C>`, `<D>`, `<Q>` and `<S>`.
+- `card-type.css`: Icons for Multiline, List, Set.
+- `text-style.css`: Disable bold/italic formatting for concept, question and descriptor.
+
 1. Open the `Custom CSS` page in RemNote.
 2. Create a new blank template block.
 3. Paste the layout:
@@ -25,10 +34,11 @@ Allow custom text styling by resetting format for concept (bold) and descriptor 
       ```css
       @import URL("https://hannesfrank.github.io/remnote-css-rem-types/practice-direction.css");
       @import URL("https://hannesfrank.github.io/remnote-css-rem-types/rem-type.css");
+      /* OR: @import URL("https://hannesfrank.github.io/remnote-css-rem-types/rem-type-simple.css"); */
       @import URL("https://hannesfrank.github.io/remnote-css-rem-types/card-type.css");
       @import URL("https://hannesfrank.github.io/remnote-css-rem-types/text-style.css");
       ```
-   2. If you want to tweak some stuff copy the style directly [from here](https://github.com/hannesfrank/remnote-css-rem-types/blob/master/card-types.css).
+   2. If you want to tweak some stuff copy the code directly from the files above.
 
 **Note:** If you do not want to get bothered by future updates, you can import a specific version with jsdelivr
 
@@ -59,29 +69,3 @@ Setup a workspace in Chrome DevTools. See e.g. [StackOverflow: How to save CSS c
 
 - Open DevTools > Sources > Filesystem and add the project folder as a workspace using the little `+`. The icon of the corresponding `.css` files should have a little green circle now and hovering over the icon shows how they are linked.
 - You can edit now both in your editor and in DevTools. I recommend enabling autosave in your text editor.
-
-## TODO
-
-- [ ] Use new `svg` as images
-  - Option 1: `background` [coloring with data url](https://stackoverflow.com/questions/13367868/modify-svg-fill-color-when-being-served-as-background-image)
-  ```
-   	content: "";
-    background: transparent url(../assets/toolbar/concept.svg) no-repeat;
-    height: 12px;
-    width: 12px;
-    background-size: contain;
-    display: inline-block;
-    filter: brightness(1.5);
-  ```
-  - Option 2: [masks](https://developer.mozilla.org/de/docs/Web/CSS/mask) (supports coloring, care prefixing)
-  ```
-    content: "";
-    background: green;
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    -webkit-mask-image: url(../assets/toolbar/concept.svg);
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-  ```
-  - Option 3: Download, color/resize and host myself or use data url.

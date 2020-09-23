@@ -21,6 +21,35 @@ I brainstormed multiple things that could work. So far Option 3 works and is doc
 - Option 4: Stylus with live editing?
 - Option 5: Inject the CSS manually and somehow reload it periodically.
 
+## Icon display
+
+- Option 1: `background` [coloring with data url](https://stackoverflow.com/questions/13367868/modify-svg-fill-color-when-being-served-as-background-image)
+
+```
+ 	content: "";
+  background: transparent url(../assets/toolbar/concept.svg) no-repeat;
+  height: 12px;
+  width: 12px;
+  background-size: contain;
+  display: inline-block;
+  filter: brightness(1.5);
+```
+
+- Option 2: [masks](https://developer.mozilla.org/de/docs/Web/CSS/mask) (supports coloring, care prefixing)
+
+```
+  content: "";
+  background: green;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  -webkit-mask-image: url(../assets/toolbar/concept.svg);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+```
+
+- Option 3: Download, color/resize and host myself or use data url.
+
 ## Current RemNote Markup Problems
 
 Right now the styling is not stable. The RemNote's markup is pretty dynamic due to heavy optimization. There are elements created and deleted whenever you hover over a Rem or focus to edit. I might have missed some cases.

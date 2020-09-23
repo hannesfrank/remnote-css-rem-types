@@ -1,0 +1,37 @@
+/* Changing the first 
+/* TODO: Does this break something? */
+.rem-container--concept-rem-type > div > div:first-child :first-child,
+.rem-container--descriptor-rem-type > div > div:first-child :first-child,
+.rem-container--question-rem-type > div > div:first-child :first-child,
+.rem-container--slot-rem-type > div > div:first-child :first-child {
+  display: inline-block;
+}
+.rem-container--concept-rem-type > div > div:first-child::before {
+  content: "｢C｣ ";
+  content: "〈C〉 ";
+  font-weight: bold;
+  color: green;
+}
+.rem-container--descriptor-rem-type > div > div:first-child::before {
+  content: "〈D〉 ";
+  font-weight: bold;
+  color: royalblue;
+}
+.rem-container--question-rem-type > div > div:first-child::before {
+  content: "〈?〉 ";
+  font-weight: bold;
+  color: mediumpurple;
+}
+.rem-container--slot-rem-type > div > div:first-child::before {
+  /* content: "〈📥〉 "; */
+  content: "〈S〉 ";
+  color: grey;
+}
+
+/* no_content-rem-type are code blocks for example. */
+/*.rem-container--no_content-rem-type:not(.rem-container--focused) > div > div:not(.rich-text-editor).EditorContainer::before {
+	content: "🖹 ";
+	font-weight: bold;
+	color: blue;
+}
+*/
