@@ -69,6 +69,7 @@ There are also some difficulties with the current markup which might get fixed l
 
 ### WIP: Wishlist for RemNote Team
 
+- [ ] Make `#hierarchy-editor-references` a class, not an id.
 - [ ] Remove `&#65279;` tag.
 - [ ] Add class to indicate hover, unfocused.
   - There is `.rem-container-focused` for edit

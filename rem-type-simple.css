@@ -1,28 +1,48 @@
-/* Changing the first 
-/* TODO: Does this break something? */
-.rem-container--concept-rem-type > div > div:first-child :first-child,
-.rem-container--descriptor-rem-type > div > div:first-child :first-child,
-.rem-container--question-rem-type > div > div:first-child :first-child,
-.rem-container--slot-rem-type > div > div:first-child :first-child {
-  display: inline-block;
-}
-.rem-container--concept-rem-type > div > div:first-child::before {
-  content: "｢C｣ ";
+.rem-container--concept-rem-type /* hover */
+  > .rem-text
+  > .rich-text-editor
+  > .EditorContainer
+  > div::before,
+.rem-container--concept-rem-type /* normal */
+  > .rem-text
+  > .EditorContainer:before {
+  /* content: "｢C｣ "; */
   content: "〈C〉 ";
   font-weight: bold;
   color: green;
 }
-.rem-container--descriptor-rem-type > div > div:first-child::before {
+.rem-container--descriptor-rem-type /* hover */
+  > .rem-text
+  > .rich-text-editor
+  > .EditorContainer
+  > div::before,
+.rem-container--descriptor-rem-type /* normal */
+  > .rem-text
+  > .EditorContainer:before {
   content: "〈D〉 ";
   font-weight: bold;
   color: royalblue;
 }
-.rem-container--question-rem-type > div > div:first-child::before {
+.rem-container--question-rem-type /* hover */
+  > .rem-text
+  > .rich-text-editor
+  > .EditorContainer
+  > div::before,
+.rem-container--question-rem-type /* normal */
+  > .rem-text
+  > .EditorContainer:before {
   content: "〈?〉 ";
   font-weight: bold;
   color: mediumpurple;
 }
-.rem-container--slot-rem-type > div > div:first-child::before {
+.rem-container--slot-rem-type /* hover */
+  > .rem-text
+  > .rich-text-editor
+  > .EditorContainer
+  > div::before,
+.rem-container--slot-rem-type /* normal */
+  > .rem-text
+  > .EditorContainer:before {
   /* content: "〈📥〉 "; */
   content: "〈S〉 ";
   color: grey;

@@ -56,6 +56,17 @@ The style consists of multiple modules of which you can chose the parts you want
 @import URL("https://cdn.jsdelivr.net/gh/hannesfrank/remnote-css-rem-types@8fe69d0/card-types.css");
 ```
 
+## Known Issues
+
+Mouse hovering:
+
+- RemNote uses more complex the markup if you hover a Rem or focus it for editing. It gets more complex if the Rem is broken down into multiple segments, e.g. if you use formatting (bold, line breaks, ...). This is really hard (or impossible) to style properly. Therefore I disabled most things if you edit the Rem. I don't know how to detect the hover state though.
+- Somethimes the markup does not get reverted if the mouse leaves a Rem. Hovering again fixes this usually.
+
+If you know a way to fix this, great! Please open an issue or, if you can fix this a Pull Request.
+
+See also my [development notes](./notes.md).
+
 ## Contributing
 
 I am not a designer. This is just a proof of concept.

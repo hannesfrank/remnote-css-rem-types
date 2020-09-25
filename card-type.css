@@ -1,4 +1,58 @@
-/* ------------------- Card type ------------------- */
+/** Card Types 
+ * 
+ * Display an icon for multiline, list an set.
+ * 
+ * There are 2 rules to select on hover, edit and on normal 
+ * 
+ * NOTE: This competes with the rem type icon for a space to place the ::before. 
+ * 
+ * TODO: Use SVG icons
+ */
+.rem-container--multiline-card-type /* hover */
+  .rem-text
+  .EditorContainer
+  > div
+  > span:first-child::before,
+.rem-container--multiline-card-type /* normal */
+  .rem-text
+  .EditorContainer
+  > span:first-child::before {
+  /* content: url("assets/toolbar/multiline.svg"); */
+  content: " ☰ ";
+  color: plum;
+}
+.rem-container--list-card-type /* hover */
+  .rem-text
+  .EditorContainer
+  > div
+  > span:first-child::before,
+.rem-container--list-card-type /* normal */
+  .rem-text
+  .EditorContainer
+  > span:first-child::before {
+  /* content: "［...］"; */
+  /* content: "[ … ] "; */
+  /* contest: url("assets/toolbar/list.svg"); */
+  content: "[⋯] ";
+  color: mediumseagreen;
+}
+
+.rem-container--set-card-type /* hover */
+  .rem-text
+  .EditorContainer
+  > div
+  > span:first-child::before,
+.rem-container--set-card-type /* normal */
+  .rem-text
+  .EditorContainer
+  > span:first-child::before {
+  /* content: "［...］"; */
+  /* content: "[ … ] "; */
+  /* contest: url("assets/toolbar/set.svg"); */
+  content: "{⋯} ";
+  color: coral;
+}
+
 /* Default Text Type */
 /*
 .rem-container--text-card-type .rem-text .concept_rem_type::before,
@@ -9,33 +63,3 @@
   color: green;
 }
 */
-
-.rem-container--multiline-card-type .rem-text .concept_rem_type::before,
-.rem-container--multiline-card-type .rem-text .descriptor_rem_type::before,
-/*.rem-container--multiline-card-type .rem-text .slot_rem_type::before,*/
-.rem-container--multiline-card-type .rem-text .question_rem_type::before {
-  /* content: url("assets/toolbar/multiline.svg"); */
-  content: " ☰ ";
-  color: plum;
-}
-.rem-container--list-card-type .rem-text .concept_rem_type::before,
-.rem-container--list-card-type .rem-text .descriptor_rem_type::before,
-/*.rem-container--multiline-card-type .rem-text .slot_rem_type::before, */
-.rem-container--list-card-type .rem-text .question_rem_type::before {
-  /* content: "［...］"; */
-  /* content: "[ … ] "; */
-  /* contest: url("assets/toolbar/list.svg"); */
-  content: "[⋯] ";
-  color: mediumseagreen;
-}
-
-.rem-container--set-card-type .rem-text .concept_rem_type::before,
-.rem-container--set-card-type .rem-text .descriptor_rem_type::before,
-/*.rem-container--multiline-card-type .rem-text .slot_rem_type::before, */
-.rem-container--set-card-type .rem-text .question_rem_type::before {
-  /* content: "［...］"; */
-  /* content: "[ … ] "; */
-  /* contest: url("assets/toolbar/set.svg"); */
-  content: "{⋯} ";
-  color: coral;
-}

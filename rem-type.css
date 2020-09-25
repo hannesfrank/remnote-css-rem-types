@@ -1,13 +1,31 @@
-/* Changing the first 
-/* TODO: Does this break something? */
-.rem-container--concept-rem-type > div > div:first-child :first-child,
-.rem-container--descriptor-rem-type > div > div:first-child :first-child,
-.rem-container--question-rem-type > div > div:first-child :first-child,
-.rem-container--slot-rem-type > div > div:first-child :first-child {
-  display: inline-block;
-}
+/** Rem type
+ * 
+ * NOTE: This competes with the card type icon for a space to place the ::before. 
+ * 
+ * The icons are a bit harder to handle because they need to be displayed as
+ * block, not as inline like in rem-type-simple.
+ */
 
-.rem-container--concept-rem-type > div > div:first-child::before {
+/** This is required to disable line breaks after the icon on hovering. 
+ *  TODO: I don't think I need this anymore after using the new selectors.
+ *  TODO: Does this break something?
+ */
+/* .rem-container--concept-rem-type > .rem-text > div:first-child :first-child, 
+.rem-container--descriptor-rem-type > .rem-text > div:first-child :first-child,
+.rem-container--question-rem-type > .rem-text > div:first-child :first-child,
+.rem-container--slot-rem-type > .rem-text > div:first-child :first-child {
+  display: inline-block;
+} */
+
+/* .rem-container--concept-rem-type > div > div:first-child::before { */
+.rem-container--concept-rem-type /* hover */
+  > .rem-text
+  > .rich-text-editor
+  > .EditorContainer
+  > div::before,
+.rem-container--concept-rem-type /* normal */
+  > .rem-text
+  > .EditorContainer:before {
   /* Original size: 15x19 */
   content: "";
   background: green;
@@ -25,7 +43,14 @@
   mask-size: contain;
 }
 
-.rem-container--descriptor-rem-type > div .EditorContainer::before {
+.rem-container--descriptor-rem-type /* hover */
+  > .rem-text
+  > .rich-text-editor
+  > .EditorContainer
+  > div::before,
+.rem-container--descriptor-rem-type /* normal */
+  > .rem-text
+  > .EditorContainer:before {
   /* Original size: 20x17 */
   content: "";
   background: royalblue;
@@ -43,7 +68,14 @@
   mask-size: contain;
 }
 
-.rem-container--question-rem-type > div > div:first-child::before {
+.rem-container--question-rem-type /* hover */
+  > .rem-text
+  > .rich-text-editor
+  > .EditorContainer
+  > div::before,
+.rem-container--question-rem-type /* normal */
+  > .rem-text
+  > .EditorContainer:before {
   /* Original size: 24x24 */
   content: "";
   background: mediumpurple;
@@ -61,7 +93,14 @@
   mask-size: contain;
 }
 
-.rem-container--slot-rem-type > div > div:first-child::before {
+.rem-container--slot-rem-type /* hover */
+  > .rem-text
+  > .rich-text-editor
+  > .EditorContainer
+  > div::before,
+.rem-container--slot-rem-type /* normal */
+  > .rem-text
+  > .EditorContainer:before {
   /* Original size: 24x24 */
   content: "";
   background: grey;
