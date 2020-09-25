@@ -2,6 +2,12 @@
 
 A Custom CSS for [RemNote](https://www.remnote.io/) to change how flashcard generating rems look.
 
+**Quickstart:**
+
+```css
+@import URL("https://hannesfrank.github.io/remnote-css-rem-types/everything.css");
+```
+
 ![default_style](./default_style.png) ![custom_style](./custom_style.png)
 
 **Features:**
@@ -27,10 +33,14 @@ The style consists of multiple modules of which you can chose the parts you want
 - `card-type.css`: Icons for Multiline, List, Set.
 - `text-style.css`: Disable bold/italic formatting for concept, question and descriptor.
 
-1. Open the `Custom CSS` page in RemNote.
-2. Create a new blank template block.
-3. Paste the layout:
-   1. If you want future updates and are ok with the defaults, import the features you want:
+- Open the `Custom CSS` page in RemNote.
+- Create a new blank template block.
+- Paste the layout
+  1.  **Recommended:** Include everything with default settings. This way you get all future updates.
+      ```css
+      @import URL("https://hannesfrank.github.io/remnote-css-rem-types/everything.css");
+      ```
+  2.  **Custom:** Only include the features you like.
       ```css
       @import URL("https://hannesfrank.github.io/remnote-css-rem-types/practice-direction.css");
       @import URL("https://hannesfrank.github.io/remnote-css-rem-types/rem-type.css");
@@ -38,9 +48,9 @@ The style consists of multiple modules of which you can chose the parts you want
       @import URL("https://hannesfrank.github.io/remnote-css-rem-types/card-type.css");
       @import URL("https://hannesfrank.github.io/remnote-css-rem-types/text-style.css");
       ```
-   2. If you want to tweak some stuff copy the code directly from the files above.
+  3.  **Expert:** You know CSS and want to tweak specific parts? Copy the code directly from the files above.
 
-**Note:** If you do not want to get bothered by future updates, you can import a specific version with jsdelivr
+**Note:** If you do not want to get bothered by future updates or want to install a develop version from another branch, you can import a specific version with jsdelivr
 
 ```css
 @import URL("https://cdn.jsdelivr.net/gh/hannesfrank/remnote-css-rem-types@8fe69d0/card-types.css");
