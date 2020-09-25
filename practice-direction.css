@@ -5,45 +5,41 @@
   font-size: 0;
 }
 
-:not(.rem-container--focused).rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled
-  .concept_rem_type::after,
-:not(.rem-container--focused).rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled
-  .descriptor_rem_type::after
-/* No question here, see below */
-/*:not(.rem-container--focused).rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled
-  .question_rem_type::after*/ {
+:not(.rem-container--question-rem-type).rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled
+  .separatorCharacterAnnotation::after,
+:not(.rem-container--question-rem-type).rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled
+  .MultiLineCardIndicator::after {
   content: "⇔";
   font-size: 15px;
   color: goldenrod;
   margin-left: 3px;
 }
 
-:not(.rem-container--focused).rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled
-  .concept_rem_type::after,
-:not(.rem-container--focused).rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled
-  .descriptor_rem_type::after,
-:not(.rem-container--focused).rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled
-  .question_rem_type::after {
+.rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled
+  .separatorCharacterAnnotation::after,
+.rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled
+  .MultiLineCardIndicator::after {
   content: "⇒";
   font-size: 15px;
   color: green;
   margin-left: 3px;
 }
 
-:not(.rem-container--focused).rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled
-  .concept_rem_type::after,
-:not(.rem-container--focused).rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled
-  .descriptor_rem_type::after
-/* No question here, see below */
-/* :not(.rem-container--focused).rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled
-  .question_rem_type::after*/ {
+:not(.rem-container--question-rem-type).rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled
+  .separatorCharacterAnnotation::after,
+:not(.rem-container--question-rem-type).rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled
+  .MultiLineCardIndicator::after {
   content: "⇐";
   font-size: 15px;
   color: blue;
   margin-left: 3px;
 }
 
-:not(.rem-container--focused).rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled
+/*
+ * FIXME: This is the only direction which is also displayed on hover. Maybe make a distinction between
+ *        .EditorContainer and .rich-text-editor there.
+ */
+.rem-container:not(.rem-container--focused).rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled
   .strikediag::after {
   content: "⇏";
   font-size: 15px;
@@ -51,16 +47,29 @@
   margin-left: 3px;
 }
 
+/* Upstream bug: On hover an extra span.descriptor_rem_type.strikediag > span{&#65279;} is constructed, which creates an extra arrow. */
+.rem-container:not(.rem-container--focused).rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled
+  .descriptor_rem_type.strikediag {
+  display: none;
+}
+
 /* warn on back questions */
-:not(.rem-container--focused).rem-container--backwards-practice-enabled
-  .question_rem_type::after {
+.rem-container--question-rem-type.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled
+  .separatorCharacterAnnotation::after,
+.rem-container--question-rem-type.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled
+  .MultiLineCardIndicator::after {
   content: "!⇐!";
   font-size: 15px;
   color: red;
   margin-left: 3px;
 }
 
-:not(.rem-container--focused).rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled
-  .question_rem_type::after {
+.rem-container--question-rem-type.rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled
+  .separatorCharacterAnnotation::after,
+.rem-container--question-rem-type.rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled
+  .MultiLineCardIndicator::after {
   content: "!⇔!";
+  font-size: 15px;
+  color: red;
+  margin-left: 3px;
 }
