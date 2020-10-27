@@ -35,10 +35,10 @@
   position: relative;
   top: 1px;
   /* left: -1px; */
-  -webkit-mask-image: url("https://www.remnote.io/assets/toolbar/concept.svg");
+  -webkit-mask-image: url("assets/concept.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
-  mask-image: url("https://www.remnote.io/assets/toolbar/concept.svg");
+  mask-image: url("assets/concept.svg");
   mask-repeat: no-repeat;
   mask-size: contain;
 }
@@ -60,10 +60,10 @@
   position: relative;
   top: 1px;
   left: -1px;
-  -webkit-mask-image: url("https://www.remnote.io/assets/toolbar/descriptor.svg");
+  -webkit-mask-image: url("assets/descriptor.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
-  mask-image: url("https://www.remnote.io/assets/toolbar/descriptor.svg");
+  mask-image: url("assets/descriptor.svg");
   mask-repeat: no-repeat;
   mask-size: contain;
 }
@@ -85,10 +85,10 @@
   position: relative;
   top: 1px;
   left: -2px;
-  -webkit-mask-image: url("https://www.remnote.io/assets/toolbar/question.svg");
+  -webkit-mask-image: url("assets/question.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
-  mask-image: url("https://www.remnote.io/assets/toolbar/question.svg");
+  mask-image: url("assets/question.svg");
   mask-repeat: no-repeat;
   mask-size: contain;
 }
@@ -111,10 +111,10 @@
   position: relative;
   top: 1px;
   left: -2px;
-  -webkit-mask-image: url("https://www.remnote.io/assets/toolbar/slot.svg");
+  -webkit-mask-image: url("assets/slot.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
-  mask-image: url("https://www.remnote.io/assets/toolbar/slot.svg");
+  mask-image: url("assets/slot.svg");
   mask-repeat: no-repeat;
   mask-size: contain;
 }

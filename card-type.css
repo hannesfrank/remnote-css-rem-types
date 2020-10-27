@@ -6,7 +6,6 @@
  * 
  * NOTE: This competes with the rem type icon for a space to place the ::before. 
  * 
- * TODO: Use SVG icons
  */
 .rem-container--multiline-card-type /* hover */
   .rem-text
@@ -17,7 +16,7 @@
   .rem-text
   .EditorContainer
   > span:first-child::before {
-  /* content: url("assets/toolbar/multiline.svg"); */
+  /* content: url("assets/multiline.svg"); */
   content: " ☰ ";
   color: plum;
 }
@@ -32,7 +31,7 @@
   > span:first-child::before {
   /* content: "［...］"; */
   /* content: "[ … ] "; */
-  /* contest: url("assets/toolbar/list.svg"); */
+  /* contest: url("assets/list.svg"); */
   content: "[⋯] ";
   color: mediumseagreen;
 }
@@ -48,7 +47,7 @@
   > span:first-child::before {
   /* content: "［...］"; */
   /* content: "[ … ] "; */
-  /* contest: url("assets/toolbar/set.svg"); */
+  /* contest: url("assets/set.svg"); */
   content: "{⋯} ";
   color: coral;
 }
