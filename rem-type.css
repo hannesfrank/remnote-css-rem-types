@@ -25,7 +25,7 @@
   > div::before,
 .rem-container--concept-rem-type /* normal */
   > .rem-text
-  > .EditorContainer:before {
+  > .EditorContainer:not(.rem-bullet__number):before {
   /* Original size: 15x19 */
   content: "";
   background: green;
@@ -50,7 +50,7 @@
   > div::before,
 .rem-container--descriptor-rem-type /* normal */
   > .rem-text
-  > .EditorContainer:before {
+  > .EditorContainer:not(.rem-bullet__number):before {
   /* Original size: 20x17 */
   content: "";
   background: royalblue;
@@ -75,7 +75,7 @@
   > div::before,
 .rem-container--question-rem-type /* normal */
   > .rem-text
-  > .EditorContainer:before {
+  > .EditorContainer:not(.rem-bullet__number):before {
   /* Original size: 24x24 */
   content: "";
   background: mediumpurple;
@@ -100,7 +100,7 @@
   > div::before,
 .rem-container--slot-rem-type /* normal */
   > .rem-text
-  > .EditorContainer:before {
+  > .EditorContainer:not(.rem-bullet__number):before {
   /* Original size: 24x24 */
   content: "";
   background: grey;

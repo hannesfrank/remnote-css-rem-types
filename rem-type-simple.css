@@ -5,7 +5,7 @@
   > div::before,
 .rem-container--concept-rem-type /* normal */
   > .rem-text
-  > .EditorContainer:before {
+  > .EditorContainer:not(.rem-bullet__number):before {
   /* content: "｢C｣ "; */
   content: "〈C〉 ";
   font-weight: bold;
@@ -18,10 +18,7 @@
   > div::before,
 .rem-container--descriptor-rem-type /* normal */
   > .rem-text
-  > .EditorContainer:before {
-  content: "〈D〉 ";
-  font-weight: bold;
-  color: royalblue;
+  > .EditorContainer:not(.rem-bullet__number):before {
 }
 .rem-container--question-rem-type /* hover */
   > .rem-text
@@ -30,10 +27,7 @@
   > div::before,
 .rem-container--question-rem-type /* normal */
   > .rem-text
-  > .EditorContainer:before {
-  content: "〈?〉 ";
-  font-weight: bold;
-  color: mediumpurple;
+  > .EditorContainer:not(.rem-bullet__number):before {
 }
 .rem-container--slot-rem-type /* hover */
   > .rem-text
@@ -42,7 +36,7 @@
   > div::before,
 .rem-container--slot-rem-type /* normal */
   > .rem-text
-  > .EditorContainer:before {
+  > .EditorContainer:not(.rem-bullet__number):before {
   /* content: "〈📥〉 "; */
   content: "〈S〉 ";
   color: grey;
