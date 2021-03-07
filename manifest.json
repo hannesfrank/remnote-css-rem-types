@@ -18,7 +18,14 @@
     "content": [
       {
         "description": "Practice Direction Arrows",
-        "css": "@import URL(\"https://hannesfrank.github.io/remnote-css-rem-types/practice-direction.css\");"
+        "content": [
+          "@import URL(\"https://hannesfrank.github.io/remnote-css-rem-types/practice-direction.css\");",
+          {
+            "description": "Warn on question back direction",
+            "css": "@import URL(\"https://hannesfrank.github.io/remnote-css-rem-types/practice-direction-question.css\");",
+            "enabled": true
+          }
+        ]
       },
       {
         "description": "**Choose one:** Concept, Descriptor, Question Icons",
