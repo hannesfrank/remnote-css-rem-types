@@ -1,0 +1,15 @@
+:root {
+  --concept-icon-color: green;
+  --descriptor-icon-color: royalblue;
+  --question-icon-color: mediumpurple;
+  --slot-icon-color: grey;
+
+  /* If you are using the ASCII Icons (enable in the Code section)
+     you can configure the content here. Unicode symbols should also work.
+   */
+  --concept-icon: "〈C〉";
+  --descriptor-icon: "〈D〉";
+  --question-icon: "〈?〉";
+  --slot-icon: "〈S〉";
+  --rem-icon-font-weight: bold;
+}

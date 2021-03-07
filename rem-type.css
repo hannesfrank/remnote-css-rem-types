@@ -28,7 +28,7 @@
   > .EditorContainer:not(.rem-bullet__number):before {
   /* Original size: 15x19 */
   content: "";
-  background: green;
+  background: var(--concept-icon-color, green);
   display: inline-block;
   width: 15px;
   height: 13px;
@@ -53,7 +53,7 @@
   > .EditorContainer:not(.rem-bullet__number):before {
   /* Original size: 20x17 */
   content: "";
-  background: royalblue;
+  background: var(--descriptor-icon-color, royalblue);
   display: inline-block;
   width: 16px;
   height: 12px;
@@ -78,7 +78,7 @@
   > .EditorContainer:not(.rem-bullet__number):before {
   /* Original size: 24x24 */
   content: "";
-  background: mediumpurple;
+  background: var(--question-icon-color, mediumpurple);
   display: inline-block;
   width: 15px;
   height: 13px;
@@ -103,7 +103,7 @@
   > .EditorContainer:not(.rem-bullet__number):before {
   /* Original size: 24x24 */
   content: "";
-  background: grey;
+  background: var(--slot-icon-color, grey);
   display: inline-block;
   width: 15px;
   height: 13px;
