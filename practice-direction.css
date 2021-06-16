@@ -58,6 +58,6 @@
   .separator-symbol:not(.concept_rem_type):not(.descriptor_rem_type):not(.question_rem_type)::after {
   content: var(--disabled-practice-icon, "⇏");
   font-size: 15px;
-  color: var(--disabled-practice-color, orangered);
+  color: var(--disabled-practice-color, tomato);
   margin-left: 3px;
 }
